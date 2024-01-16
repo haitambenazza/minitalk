@@ -52,7 +52,7 @@ void	new_line(int pid)
 		else
 			kill(pid, SIGUSR2);
 		j--;
-		usleep(150);
+		usleep(250);
 	}
 }
 
@@ -77,7 +77,7 @@ void	send(char *msg, int pid)
 			else
 				kill(pid, SIGUSR2);
 			j--;
-			usleep(150);
+			usleep(250);
 		}
 		i++;
 	}
